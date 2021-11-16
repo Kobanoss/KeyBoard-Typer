@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/hint/pixmap">
+        <file>src/hint.png</file>
+    </qresource>
+    <qresource prefix="/logo">
+        <file>src/logo.ico</file>
+    </qresource>
+</RCC>
