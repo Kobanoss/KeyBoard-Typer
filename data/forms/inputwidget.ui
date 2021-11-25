@@ -93,7 +93,7 @@ background-color:white;</string>
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>70</y>
+       <y>50</y>
        <width>50</width>
        <height>15</height>
       </rect>
@@ -111,89 +111,14 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_1">
-     <property name="geometry">
-      <rect>
-       <x>5</x>
-       <y>20</y>
-       <width>50</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>Начало:</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_input_time_start">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>20</y>
-       <width>50</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>-</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>5</x>
-       <y>40</y>
-       <width>50</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>Текущее:</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>70</y>
+       <y>50</y>
        <width>50</width>
        <height>15</height>
       </rect>
@@ -214,36 +139,11 @@ background-color:white;</string>
       <string>Осталось:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_input_time_current">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>40</y>
-       <width>50</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>-</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
        <x>130</x>
-       <y>70</y>
+       <y>50</y>
        <width>50</width>
        <height>15</height>
       </rect>
@@ -305,7 +205,7 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_4">
@@ -361,7 +261,7 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -467,7 +367,7 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_input_speed_current_per_sec">
@@ -498,7 +398,7 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
@@ -554,7 +454,7 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_6">
@@ -610,7 +510,7 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_10">
