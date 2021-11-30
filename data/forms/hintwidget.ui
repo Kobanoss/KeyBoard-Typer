@@ -42,7 +42,7 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">color: black;
+   <string notr="true">color:black;
 background-color:white;</string>
   </property>
   <widget class="QLabel" name="label_hint_picmap">
@@ -87,19 +87,19 @@ background-color:white;</string>
     <rect>
      <x>230</x>
      <y>210</y>
-     <width>270</width>
+     <width>310</width>
      <height>30</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>270</width>
+     <width>310</width>
      <height>30</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>270</width>
+     <width>310</width>
      <height>30</height>
     </size>
    </property>
