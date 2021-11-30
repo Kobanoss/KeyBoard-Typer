@@ -30,8 +30,8 @@
     <normaloff>:/logo/src/logo.ico</normaloff>:/logo/src/logo.ico</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">color: black;
-background-color:white;</string>
+   <string notr="true">color:#f8f8f8;
+background-color:#181818;</string>
   </property>
   <widget class="QTextBrowser" name="textBrowser_input_test_data">
    <property name="geometry">
@@ -41,6 +41,9 @@ background-color:white;</string>
      <width>751</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
    </property>
    <property name="textInteractionFlags">
     <set>Qt::NoTextInteraction</set>
@@ -55,11 +58,14 @@ background-color:white;</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
    <property name="textInteractionFlags">
     <set>Qt::NoTextInteraction</set>
    </property>
    <property name="placeholderText">
-    <string>Как только вы нажмете на любую клавишу, тест начнется, тут будет появляться вводимый вами текст</string>
+    <string>Как только вы нажмете на Enter, тест начнется, тут будет появляться вводимый вами текст</string>
    </property>
   </widget>
   <widget class="QFrame" name="frame_input_main">
@@ -93,7 +99,7 @@ background-color:white;</string>
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>70</y>
+       <y>50</y>
        <width>50</width>
        <height>15</height>
       </rect>
@@ -111,89 +117,14 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_1">
-     <property name="geometry">
-      <rect>
-       <x>5</x>
-       <y>20</y>
-       <width>50</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>Начало:</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_input_time_start">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>20</y>
-       <width>50</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>-</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>5</x>
-       <y>40</y>
-       <width>50</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>Текущее:</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>70</y>
+       <y>50</y>
        <width>50</width>
        <height>15</height>
       </rect>
@@ -214,36 +145,11 @@ background-color:white;</string>
       <string>Осталось:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_input_time_current">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>40</y>
-       <width>50</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>50</width>
-       <height>15</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>-</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
        <x>130</x>
-       <y>70</y>
+       <y>50</y>
        <width>50</width>
        <height>15</height>
       </rect>
@@ -305,7 +211,7 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_4">
@@ -361,7 +267,7 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -467,7 +373,7 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_input_speed_current_per_sec">
@@ -498,7 +404,7 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
@@ -554,7 +460,7 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_6">
@@ -610,7 +516,7 @@ background-color:white;</string>
       </size>
      </property>
      <property name="text">
-      <string>-</string>
+      <string>0</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_10">
@@ -724,6 +630,9 @@ background-color:white;</string>
      <height>21</height>
     </rect>
    </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
    <property name="text">
     <string>Сбросить</string>
    </property>
@@ -737,6 +646,9 @@ background-color:white;</string>
      <height>21</height>
     </rect>
    </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
    <property name="text">
     <string>Сохранить результаты</string>
    </property>
@@ -749,6 +661,9 @@ background-color:white;</string>
      <width>131</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
     <string>Выйти в главное меню</string>

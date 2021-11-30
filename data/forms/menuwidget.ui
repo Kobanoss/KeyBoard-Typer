@@ -22,6 +22,11 @@
     <height>400</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <family>MS Shell Dlg 2</family>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>KeyBoard-Typer</string>
   </property>
@@ -30,8 +35,8 @@
     <normaloff>:/logo/src/logo.ico</normaloff>:/logo/src/logo.ico</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">color: black;
-background-color:white;</string>
+   <string notr="true">color:#f8f8f8;
+background-color:#181818;</string>
   </property>
   <widget class="QGroupBox" name="groupBox_main_lang">
    <property name="geometry">
@@ -51,7 +56,7 @@ background-color:white;</string>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="radioButton_ru">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -63,8 +68,11 @@ background-color:white;</string>
     <property name="text">
      <string>Русский</string>
     </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="radioButton_en">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -77,7 +85,7 @@ background-color:white;</string>
      <string>Английский</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_3">
+   <widget class="QRadioButton" name="radioButton_spec">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -95,7 +103,7 @@ background-color:white;</string>
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>310</y>
+     <y>330</y>
      <width>300</width>
      <height>50</height>
     </rect>
@@ -112,27 +120,19 @@ background-color:white;</string>
      <height>50</height>
     </size>
    </property>
+   <property name="font">
+    <font>
+     <family>Gill Sans MT Ext Condensed Bold</family>
+    </font>
+   </property>
    <property name="text">
     <string>Начать тест</string>
-   </property>
-  </widget>
-  <widget class="QTextBrowser" name="textBrowser_main_stat">
-   <property name="geometry">
-    <rect>
-     <x>440</x>
-     <y>40</y>
-     <width>351</width>
-     <height>321</height>
-    </rect>
-   </property>
-   <property name="textInteractionFlags">
-    <set>Qt::NoTextInteraction</set>
    </property>
   </widget>
   <widget class="QLabel" name="label_main_stat">
    <property name="geometry">
     <rect>
-     <x>560</x>
+     <x>510</x>
      <y>10</y>
      <width>101</width>
      <height>20</height>
@@ -145,13 +145,13 @@ background-color:white;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>220</y>
      <width>302</width>
-     <height>46</height>
+     <height>50</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -201,20 +201,20 @@ background-color:white;</string>
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>150</y>
      <width>302</width>
-     <height>46</height>
+     <height>50</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>Уровень сложности</string>
+       <string>Тип ввода</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -237,7 +237,7 @@ background-color:white;</string>
       </property>
       <item>
        <property name="text">
-        <string>Символы</string>
+        <string>Одиночные символы</string>
        </property>
       </item>
       <item>
@@ -250,6 +250,258 @@ background-color:white;</string>
         <string>Текст</string>
        </property>
       </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_main_stat">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>40</y>
+     <width>450</width>
+     <height>340</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>450</width>
+     <height>340</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>430</width>
+     <height>340</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#f8f8f8;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustIgnored</enum>
+   </property>
+   <property name="autoScrollMargin">
+    <number>8</number>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="tabKeyNavigation">
+    <bool>false</bool>
+   </property>
+   <property name="showDropIndicator" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>false</bool>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::NoSelection</enum>
+   </property>
+   <property name="showGrid">
+    <bool>true</bool>
+   </property>
+   <property name="gridStyle">
+    <enum>Qt::SolidLine</enum>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+   <property name="cornerButtonEnabled">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>20</number>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>85</number>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderMinimumSectionSize">
+    <number>30</number>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>30</number>
+   </attribute>
+   <attribute name="verticalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <row>
+    <property name="text">
+     <string>Новая строка</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Новая строка</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Новая строка</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Новая строка</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Новая строка</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Новая строка</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Новая строка</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Новая строка</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Новая строка</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Новая строка</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>Имя</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Тип ввода</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Время</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignLeading|AlignVCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Ошибки</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Слов в минуту</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+   </column>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>302</width>
+     <height>49</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Ваше имя</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_main_username">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
      </widget>
     </item>
    </layout>
