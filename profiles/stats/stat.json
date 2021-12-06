@@ -1,0 +1,17 @@
+{
+    "test0_username": { "type": "chars",
+                       "time": 0,
+                       "mistakes": 20,
+                       "speed": 1},
+
+    "test1_username": { "type": "chars",
+                        "time": 0,
+                        "mistakes": 20,
+                        "speed": 1},
+
+    "test2_username": { "type": "chars",
+                        "time": 0,
+                        "mistakes": 20,
+                        "speed": 1},
+
+}
